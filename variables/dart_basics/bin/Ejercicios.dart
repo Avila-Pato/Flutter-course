@@ -1,7 +1,3 @@
-import 'dart:ffi';
-import 'dart:io';
-import 'dart:mirrors';
-
 void main() {
   // CALCULADORA BASICA
 
@@ -40,7 +36,15 @@ void main() {
   String priceWIthTip = (priceWithTip / people).toStringAsFixed(2);
   print(priceWIthTip);
 
-  // double bill = double.parse(total);
+  int currentAge = 18;
+
+  if (currentAge > 18) {
+    print("Eres mayor de edad");
+  } else if (currentAge < 18) {
+    print("Eres menor de edad");
+  }
+}
+// double bill = double.parse(total);
   // print("El total de la cuenta es $bill");
   // double totalCount = (bill + tip);
   // print("Cuenta total + propina $totalCount");
@@ -48,4 +52,3 @@ void main() {
 
   // String facturaPerPerson = (totalCount / peoples).toStringAsFixed(2);
   // print("Factura por persona a pagar es de $facturaPerPerson");
-}
