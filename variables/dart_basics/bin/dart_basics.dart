@@ -15,26 +15,25 @@ void main(List<String> arguments) {
   String fulltexto2 = "$name2 y tengo $age2";
   print(fulltexto2);
 
-
   // Conversiones
   var number2 = 20.0;
   var number3 = number2.toInt();
   var number4 = number2.toString();
 
   var numero = "43";
-  var numero2 = int.parse(numero)
-  String toDouble = "32.43"
-  double doubleOk = double.parse(toDouble)
+  var numero2 = int.parse(numero);
+  String toDouble = "32.43";
+  double doubleOk = double.parse(toDouble);
 
   //Operaciones
   int a = 2;
   int b = 3;
 
-  int suma = a + b; 
+  int suma = a + b;
   int resta = a - b;
   int multi = a * b;
-  double division =  a / b;
-  double divisionSinDecimalv a~/ b;
+  double division = a / b;
+  // double divisionSinDecimalv = a ~/ b;
   int modulo = a % b;
 
   // a += b;
@@ -44,9 +43,8 @@ void main(List<String> arguments) {
   // a++
   // a--
 
-
-  print(doubleOk)
-  print(numero2) 
+  print(doubleOk);
+  print(numero2);
   print(number2);
   print(number3);
   print(number4);
