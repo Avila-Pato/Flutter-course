@@ -1,6 +1,10 @@
 void main(List<String> arguments) {
-  grettings("Pato");
-  grettings("Jhoana");
+  // grettings("Pato");
+  // grettings("Jhoana");
+  // optionalFunction();
+  // optionalFunction();
+  // optionalFunction2("erica", 32);
+  listExamples();
 }
 
 void grettings(String name) {
@@ -64,4 +68,32 @@ int outputFunction() {
   int a = 4;
   int b = 2;
   return a + b;
+}
+
+int outputFunction2(int a, int b) => a + b; // Arrow function
+
+void optionalFunction({String name = "Jhon Doe", int age = 43}) {
+  print("Tu nombres es $name y tu edad es $age");
+}
+
+void optionalFunction2(String name, [int age = -1]) {
+  print("Tu nombres es $name y tu edad es  $age ");
+}
+
+void listExamples() {
+  List<String> names = ["aris", "Pepe", "Manuel"];
+  var names2 = ["de otro we"];
+
+  // print(names.last);
+  // print(names.first);
+  // print(names.length);
+  // print(names[names.length - 1]);
+  // names[2] = "PEPE";
+  names.insert(2, "Otro Men");
+  names.add("Claudio");
+  names.addAll(names2);
+  names.remove("aris");
+  names.removeAt(1);
+  names.clear();
+  print(names);
 }

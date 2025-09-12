@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main() {
   // print("Ingrese una fecha:  ");
   // String date = stdin.readLineSync()!;
