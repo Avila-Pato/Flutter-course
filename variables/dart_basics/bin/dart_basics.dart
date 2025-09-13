@@ -180,7 +180,6 @@ void mapLoop() {
   }
 }
 
-/*************  ✨ Windsurf Command ⭐  *************/
 /// Esta funci n ilustra el uso del operador null-safety (??) para
 /// asignar un valor a una variable en caso de que la otra variable sea
 /// nula. En este caso, se asigna "no tiene nombre" a la variable
