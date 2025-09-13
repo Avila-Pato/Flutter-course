@@ -6,7 +6,10 @@ void main(List<String> arguments) {
   // optionalFunction2("erica", 32);
   // listExamples();
   // setExamples();
-  mapExamples();
+  // mapExamples();
+  listLoop();
+  setLoop();
+  mapLoop();
 }
 
 void grettings(String name) {
@@ -127,4 +130,41 @@ void mapExamples() {
   print(people);
 
   // print(people["aris"]);
+}
+
+void listLoop() {
+  List<String> names = ["aris", "Pepe", "Manuel"];
+
+  for (int i = 0; i < names.length; i++) {
+    print(names[i]);
+  }
+
+  for (var name in names) {
+    print(name);
+  }
+}
+
+void setLoop() {
+  Set<int> numbers = {1, 2, 3, 4, 5};
+
+  for (int number in numbers) {
+    print(number);
+  }
+
+  for (int i = 0; i < numbers.length; i++) {
+    print(numbers);
+  }
+
+  for (var number in numbers) {
+    print(number);
+  }
+}
+
+void mapLoop() {
+  Map<String, int> people = {"aris": 32, "pepe": 21, "Manuel": 23};
+
+  for (var person in people.entries) {
+    print(person.key);
+    print(person.value);
+  }
 }
