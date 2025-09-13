@@ -4,7 +4,9 @@ void main(List<String> arguments) {
   // optionalFunction();
   // optionalFunction();
   // optionalFunction2("erica", 32);
-  listExamples();
+  // listExamples();
+  // setExamples();
+  mapExamples();
 }
 
 void grettings(String name) {
@@ -96,4 +98,33 @@ void listExamples() {
   names.removeAt(1);
   names.clear();
   print(names);
+}
+
+void setExamples() {
+  Set<String> names = {"aris", "Pepe", "Manuel"};
+  var names2 = {"de otro we"};
+
+  names.add("Aris");
+  names.addAll(names2);
+  names.remove("aris");
+
+  print(names.length);
+  print(names.contains("aris"));
+  print(names.union(names2));
+}
+
+void mapExamples() {
+  Map<String, int> people = {"aris": 32, "pepe": 21, "Manuel": 23};
+
+  people["aris"] = 88;
+  people.addAll({"jhon": 21, "Erikca": 23});
+
+  people.remove("aris");
+  // people.clear();
+
+  print(people.values);
+  print(people.keys);
+  print(people);
+
+  // print(people["aris"]);
 }
