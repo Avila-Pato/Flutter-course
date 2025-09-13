@@ -1,0 +1,10 @@
+class IceaMain {
+  String flavor = "Desconocido";
+  bool hasSugar = false;
+  double price = 3.1;
+  String size = "Grande";
+
+  void charge() {
+    print("El precio del heladao tamaño $size es de \$$price");
+  }
+}

@@ -1,3 +1,5 @@
+import 'package:dart_basics/IceCream';
+
 void main(List<String> arguments) {
   // grettings("Pato");
   // grettings("Jhoana");
@@ -7,9 +9,18 @@ void main(List<String> arguments) {
   // listExamples();
   // setExamples();
   // mapExamples();
-  listLoop();
-  setLoop();
-  mapLoop();
+  // listLoop();
+  // setLoop();
+  // mapLoop();
+
+  var chocolate = IceaMain();
+  var text = IceaMain();
+
+  text.flavor = "Menta";
+  chocolate.flavor = "Vainilla";
+
+  text.charge();
+  chocolate.charge();
 }
 
 void grettings(String name) {

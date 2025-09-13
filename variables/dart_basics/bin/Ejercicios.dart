@@ -94,7 +94,9 @@ void main() {
   //     print("janaury");
   //     break;
   // }
+}
 
+void sumaPares() {
   // Ejercicio 5
 
   // Escribe un programa en DFart que tome una lsita de numeros enteros y calcule la suma de todos los numeros pares en la lista
@@ -102,9 +104,7 @@ void main() {
   //  ejemplo
   // Entrada [1, 2, 3, 4, 5, 6 ]
   // Salida: la suma de los numeros pares es 12
-}
 
-void sumaPares() {
   // List<int> numbers = [1, 2, 3, 4, 5, 6];
   // int suma = 0;
 
