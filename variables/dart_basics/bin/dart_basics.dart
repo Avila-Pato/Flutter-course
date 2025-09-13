@@ -13,14 +13,14 @@ void main(List<String> arguments) {
   // setLoop();
   // mapLoop();
 
-  var chocolate = IceaMain();
-  var text = IceaMain();
-
-  text.flavor = "Menta";
-  chocolate.flavor = "Vainilla";
-
-  text.charge();
-  chocolate.charge();
+  // POO
+  // var chocolate = IceaMain();
+  // var text = IceaMain();
+  // text.flavor = "Menta";
+  // chocolate.flavor = "Vainilla";
+  // text.charge();
+  // chocolate.charge();
+  nullability();
 }
 
 void grettings(String name) {
@@ -178,4 +178,17 @@ void mapLoop() {
     print(person.key);
     print(person.value);
   }
+}
+
+/*************  ✨ Windsurf Command ⭐  *************/
+/// Esta funci n ilustra el uso del operador null-safety (??) para
+/// asignar un valor a una variable en caso de que la otra variable sea
+/// nula. En este caso, se asigna "no tiene nombre" a la variable
+/// valor si name es nula. De lo contrario, se asigna el valor de
+/// name a la variable valor.
+void nullability() {
+  //String? Patricio;
+  String? name;
+  String valor = name ?? "no tiene nombre";
+  print(valor);
 }
