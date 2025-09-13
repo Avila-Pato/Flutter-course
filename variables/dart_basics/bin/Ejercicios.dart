@@ -1,6 +1,17 @@
-import 'dart:io';
+// import 'dart:io';
 
 void main() {
+  sumaPares();
+  filtroWords();
+  // double bill = double.parse(total);
+  // print("El total de la cuenta es $bill");
+  // double totalCount = (bill + tip);
+  // print("Cuenta total + propina $totalCount");
+  // print("Numero de personas en dividir la cuenta $peoples");
+
+  // String facturaPerPerson = (totalCount / peoples).toStringAsFixed(2);
+  // print("Factura por persona a pagar es de $facturaPerPerson");
+
   // CALCULADORA BASICA
 
   // ejercicios 1
@@ -74,23 +85,67 @@ void main() {
 
   // Escribe un programa quer eciba un numero entre 1 y 12 e imprima el nombre del mes correspondiente del ano
 
-  print("Imprima el mes por numero: ");
+  // print("Imprima el mes por numero: ");
 
-  int mothNumber = int.parse(stdin.readLineSync()!);
+  // int mothNumber = int.parse(stdin.readLineSync()!);
 
-  switch (mothNumber) {
-    case 1:
-      print("janaury");
-      break;
-  }
+  // switch (mothNumber) {
+  //   case 1:
+  //     print("janaury");
+  //     break;
+  // }
+
+  // Ejercicio 5
+
+  // Escribe un programa en DFart que tome una lsita de numeros enteros y calcule la suma de todos los numeros pares en la lista
+
+  //  ejemplo
+  // Entrada [1, 2, 3, 4, 5, 6 ]
+  // Salida: la suma de los numeros pares es 12
 }
 
+void sumaPares() {
+  // List<int> numbers = [1, 2, 3, 4, 5, 6];
+  // int suma = 0;
 
-// double bill = double.parse(total);
-  // print("El total de la cuenta es $bill");
-  // double totalCount = (bill + tip);
-  // print("Cuenta total + propina $totalCount");
-  // print("Numero de personas en dividir la cuenta $peoples");
+  // for (int sum in numbers) {
+  //   if (sum % 2 == 0) {
+  //     suma += sum;
+  //   }
+  // }
+  // print("La suma de los numeros es $suma");
 
-  // String facturaPerPerson = (totalCount / peoples).toStringAsFixed(2);
-  // print("Factura por persona a pagar es de $facturaPerPerson");
+  // for (var i = 1; i <= numbers.length; i++) {
+  //   if (i % 2 == 0) {
+  //     suma += i;
+  //   }
+  // }
+  // print("La suma de los valores es de $suma");
+
+  // for (int elementos in numbers) {
+  //   print(elementos);
+  // }
+}
+
+// Ejercicio 6 filtrar palabras uncias en un set
+
+// Escibe un p[rograma que reciba una lista de palabras con algunas repetidas y almacene solo las palabras unicas en un set luego, muestre el conconto resutlante
+
+// entrada ["dart", "flutter", "dart", "codigo"], "flutter", "movil"]
+// ssalida {dart, flutter, codigo, movil}
+
+void filtroWords() {
+  Set<String> filtros = {
+    "dart",
+    "flutter",
+    "dart",
+    "codigo",
+    "flutter",
+    "movil",
+  };
+
+  for (String str in filtros) {
+    print(str);
+  }
+  Set.of(filtros);
+}
